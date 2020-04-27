@@ -11,12 +11,14 @@
                         <div class="ml-auto">
                             <a href="{{ route('questions.create') }}" class="btn btn-outline-secondary">Ask Question</a>
                         </div>
-                    </div>  
-
-                </div>            
+                    </div>
+                    
+                </div>
 
                 <div class="card-body">
-                   @foreach ($questions as $question)
+                
+                
+                    @foreach ($questions as $question)
                         <div class="media">
                             <div class="d-flex flex-column counters">
                                 <div class="vote">
@@ -46,7 +48,6 @@
                         {{$questions->links() }}
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 </div>
